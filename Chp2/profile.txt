@@ -1,0 +1,4 @@
+Name:            Alex
+Email:           alex.simonian@gmail.com
+Favorite Color:  blue
+Yearly Income:   90,000.00
