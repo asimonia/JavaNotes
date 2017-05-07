@@ -7,7 +7,13 @@ public class HelloWorldGUI2 {
 	private static class HelloWorldDisplay extends JPanel {
 		public void paintComponent(Graphics g) {
 			super.paintComponent(g);
-			g.drawString( "Hello World!", 50, 30);
+			Graphics2D g2;
+			g2 = (Graphics2D)g;
+			g2.setRenderingHint( RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON );
+			g2.drawString( "Hello World!", 50, 30);
+			g2.drawLine(10, 10, 30, 30);
+			g2.drawOval(50, 50, 40, 40);
+			g2.draw3DRect(20, 20, 40, 40, true);
 		}
 	}
 
